@@ -1,0 +1,23 @@
+
+{
+  "name": "RugbyBot",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Cart Bot",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Bot",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://*.hidden.url/*",
+    "http://*.hidden.url/*",
+    "*://*/*",
+   	"contextMenus", "tabs", "activeTab"
+  ]
+}
